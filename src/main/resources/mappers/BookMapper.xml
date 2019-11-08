@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootapp.mappers.BookMapper">
+
+    <resultMap id="bookMap" type="com.example.springbootapp.models.BookInfo">
+        <result property="id" column="id"/>
+        <result property="bookName" column="book_name"/>
+        <result property="bookAuthor" column="book_author"/>
+        <result property="bookPrice" column="book_price"/>
+        <result property="bookIsbn" column="book_isbn"/>
+    </resultMap>
+
+    <insert id="saveBook" parameterType="com.example.springbootapp.models.BookInfo">
+        insert into t_books
+        (book_name,
+         book_author,
+         book_price,
+         book_isbn)
+        values
+        (#{bookName},
+         #{bookAuthor},
+         #{bookPrice},
+         #{bookIsbn})
+    </insert>
+
+
+    <select id="getBookInfo" resultMap="bookMap">
+        select *
+        from t_books
+        where id = #{id}
+    </select>
+
+
+    <select id="getBooks" resultMap="bookMap" parameterType="com.example.springbootapp.common.DefaultQueryCondition">
+        select * from t_books
+        where
+        <if test="condition.condition.id != null">
+            id = #{condition.condition.id}
+        </if>
+        <if test="condition.condition.bookName != null">
+            AND book_name = #{condition.condition.bookName}
+        </if>
+        <if test="condition.condition.bookAuthor != null">
+            AND book_author = #{condition.condition.bookAuthor}
+        </if>
+        <if test="condition.condition.bookPrice != null">
+            AND book_price = #{condition.condition.bookPrice}
+        </if>
+        <if test="condition.condition.bookIsbn != null">
+            AND book_isbn = #{condition.condition.bookIsbn}
+        </if>
+    </select>
+
+
+    <delete id="deleteBook">
+        delete
+        from t_books
+        where id = #{id}
+    </delete>
+
+</mapper>
