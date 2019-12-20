@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * desc: 程序启动入口类
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 @SpringBootApplication

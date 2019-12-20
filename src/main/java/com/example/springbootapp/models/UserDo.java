@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * desc: 用户数据对象
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/11/6
  **/
 public class UserDo {

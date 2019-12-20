@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * desc: 默认查询条件实现
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 public class DefaultQueryCondition implements QueryCondition {

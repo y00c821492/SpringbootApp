@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * desc: 书籍管理接口
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 @Component

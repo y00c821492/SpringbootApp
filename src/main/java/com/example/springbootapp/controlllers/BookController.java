@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * desc: 图书管理接口
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 @RestController

@@ -8,7 +8,7 @@ import lombok.*;
 
 /**
  * desc: 查询图书返回结果
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 @Setter

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * desc: 用户管理接口
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/11/6
  **/
 @RestController

@@ -2,7 +2,7 @@ package com.example.springbootapp.exceptions;
 
 /**
  * desc: 自定义业务异常
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 public class ServerException extends Exception {

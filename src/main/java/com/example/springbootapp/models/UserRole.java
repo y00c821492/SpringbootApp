@@ -2,7 +2,7 @@ package com.example.springbootapp.models;
 
 /**
  * desc: 用户角色
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/11/6
  **/
 public enum UserRole {

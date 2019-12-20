@@ -2,7 +2,7 @@ package com.example.springbootapp.common;
 
 /**
  * desc:
- * author: yudeshui
+ * author: sadcoder333
  * date: 2019/10/1
  **/
 public interface QueryCondition {
